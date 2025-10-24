@@ -244,7 +244,7 @@ namespace Fluid
         /// <param name="name">The name of the value.</param>
         public FluidValue GetValue(string name)
         {
-            return LocalScope.GetValue(name);
+            return LocalScope.GetValue(name, this);
         }
 
         /// <summary>
