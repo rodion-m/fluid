@@ -35,7 +35,7 @@ namespace Fluid.Parser
             }
 
             // Clear missing variables from previous renders
-            context._missingVariables?.Clear();
+            context.ClearMissingVariables();
 
             // If StrictVariables enabled, render to temp buffer to collect all missing variables
             TextWriter targetWriter = writer;
