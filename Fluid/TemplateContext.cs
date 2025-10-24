@@ -164,6 +164,14 @@ namespace Fluid
         }
 
         /// <summary>
+        /// Clears the collection of missing variables.
+        /// </summary>
+        internal void ClearMissingVariables()
+        {
+            _missingVariables?.Clear();
+        }
+
+        /// <summary>
         /// Gets or sets a model object that is used to resolve properties in a template. This object is used if local and
         /// global scopes are unsuccessful.
         /// </summary>
